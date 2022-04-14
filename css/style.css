@@ -1,0 +1,73 @@
+body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	font-size: 100%;
+	background: #FFF;
+}
+
+#fundo-branco{
+}
+
+#espaco-de-jogar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    /*transform: translate(50%, 0%); */
+}
+
+#img-linhas{
+	width: 600px;
+	height: 600px;
+}
+
+/* locais de jogo */
+	/*display: inline-block; inline é colunas e inline-flex é as linhas */
+	/* 27cm de margin */
+#spot-jogo{
+	width: 534px;
+	height: 534px;
+	border: 2px solid red;
+	position: absolute;
+}
+
+.spot-peca-jogada{
+	width: 150px;
+	height: 150px;
+	padding: 13px;
+	border: 1px solid red;
+}
+
+
+/* matriz *//*
+#spot-11{
+	transform: translate(-100%, 0%);
+}
+#spot-12{
+	transform: translate(100%, 100%);
+}
+
+#spot-21{
+	transform: translate(-100%, -100%);
+}
+
+#spot-22{
+	
+}*/
+
+
+
+
+/* Peças */
+
+.xis{
+	width: 150px;
+	height: 150px;
+}
+
+.bola{
+	width: 150px;
+	height: 150px;
+}
