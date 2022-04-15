@@ -21,6 +21,7 @@ body{
 	padding-right: 20px;
 	background-color: #bbb;
 	display: block;
+	height: 220px;
 	border: 1px solid gray;
 	margin-left: -207px;
 	justify-content: center;
@@ -44,19 +45,20 @@ body{
 	margin: 10px;
 	border-radius: 10px;
 	cursor:pointer;
-	background-color: #999;
+	background-color: black;
 }
 .btn:hover{
-	color: #fff;
-	border: 2px solid white;
-	background-color: #000;
+	color: #000;
+	border: 2px solid black;
+	background-color: #fff;
 }
 
 #btn-b{
+	color: #FFF;
 	background-color: #0066b8;
 }
 #btn-r{
-
+	color: #FFF;
 	background-color: #ff0000; 
 }
 #btn-b:hover{
@@ -96,7 +98,7 @@ body{
 /* locais de jogo */
 	/*display: inline-block; inline é colunas e inline-flex é as linhas */
 	/* 27cm de margin */
-#spot-jogo{
+#spot-game{
 	width: 534px;
 	height: 534px;
 	border: 3px solid gray;
@@ -150,6 +152,14 @@ body{
 }
 
 
+/* Jogadas */
+
+.btn-jogada{
+	border: 1px solid red;
+	width: 160px;
+	height: 160px;
+	opacity : 0;
+}
 
 /* Peças */
 
