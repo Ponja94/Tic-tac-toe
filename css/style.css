@@ -95,6 +95,27 @@ body{
 	height: 600px;
 }
 
+.img-ganhador-obliq{
+	display: none;
+	margin-top: -160px;
+	width: 500px;
+	height: 500px;
+}
+
+.img-ganhador-vert{
+	display: none;
+	margin-top: -160px;
+	width: 165px;
+	height: 510px;
+}
+
+.img-ganhador-hor{
+	display: none;
+	margin-top: -160px;
+	width: 510px;
+	height: 165px;
+}
+
 /* locais de jogo */
 	/*display: inline-block; inline é colunas e inline-flex é as linhas */
 	/* 27cm de margin */
