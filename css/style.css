@@ -114,39 +114,39 @@ body{
 
 /* matriz  
 	transform: translate(0%, 0%); (coluna, linha)*/
-#spot-11{
+#spot-00{
 	position: absolute;
 	transform: translate(0%, 0%);
 }
-#spot-12{
+#spot-01{
 	position: absolute;
 	transform: translate(100%, 0%);
 }
-#spot-13{
+#spot-02{
 	position: absolute;
 	transform: translate(200%, 0%);
 }
-#spot-21{
+#spot-10{
 	position: absolute;
 	transform: translate(0%, 100%);
 }
-#spot-22{
+#spot-11{
 	position: absolute;
 	transform: translate(100%, 100%);
 }
-#spot-23{
+#spot-12{
 	position: absolute;
 	transform: translate(200%, 100%);
 }
-#spot-31{
+#spot-20{
 	position: absolute;
 	transform: translate(0%, 200%);
 }
-#spot-32{
+#spot-21{
 	position: absolute;
 	transform: translate(100%, 200%);
 }
-#spot-33{
+#spot-22{
 	position: absolute;
 	transform: translate(200%, 200%);
 }
