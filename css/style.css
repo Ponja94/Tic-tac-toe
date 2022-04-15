@@ -5,18 +5,88 @@ body{
 	outline: none;
 	box-sizing: border-box;
 	font-size: 100%;
-	background: #FFF;
+	background: #FFF;    
+	/* não deixa selecionar o texto */
+	-webkit-touch-callout: none;  /* iPhone OS, Safari */
+    -webkit-user-select: none;    /* Chrome, Safari 3 */
+    -khtml-user-select: none;     /* Safari 2 */
+    -moz-user-select: none;       /* Firefox */
+    -ms-user-select: none;        /* IE10+ */
+    user-select: none;            /* Possível implementação no futuro */
+    /* cursor: default; */
+}
+/* escolher time */
+
+#time-escolha{
+	padding-right: 20px;
+	background-color: #bbb;
+	display: block;
+	border: 1px solid gray;
+	margin-left: -207px;
+	justify-content: center;
+}
+#tamanho-letra{
+	margin-left: 10px;
+	padding: 5px 5px;
+ 	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1.8em;
 }
 
-#fundo-branco{
+.btn{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.95em;
+	font-weight: bold;
+	width: 100%;
+	height: 38px;
+	padding: 9px 50px;
+	border: 1px solid gray;
+	color: white;
+	margin: 10px;
+	border-radius: 10px;
+	cursor:pointer;
+	background-color: #999;
+}
+.btn:hover{
+	color: #fff;
+	border: 2px solid white;
+	background-color: #000;
+}
+
+#btn-b{
+	background-color: #0066b8;
+}
+#btn-r{
+
+	background-color: #ff0000; 
+}
+#btn-b:hover{
+	color: #fff;
+	border: 2px solid white;
+	background-color: #0066b8;
+}
+#btn-r:hover{
+	color: #fff;
+	border: 2px solid white;
+	background-color: #ff0000; 
+}
+#btn-reset{
+	display: none;
+}
+
+
+
+/* jogo */
+#fundo{
+	background: #dadada;
+	height: 100vh;
 }
 
 #espaco-de-jogar{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-    /*transform: translate(50%, 0%); */
 }
+
 
 #img-linhas{
 	width: 600px;
@@ -29,7 +99,7 @@ body{
 #spot-jogo{
 	width: 534px;
 	height: 534px;
-	border: 2px solid red;
+	border: 3px solid gray;
 	position: absolute;
 }
 
@@ -37,26 +107,47 @@ body{
 	width: 150px;
 	height: 150px;
 	padding: 13px;
-	border: 1px solid red;
 }
 
 
-/* matriz *//*
+/* matriz  
+	transform: translate(0%, 0%); (coluna, linha)*/
 #spot-11{
-	transform: translate(-100%, 0%);
+	position: absolute;
+	transform: translate(0%, 0%);
 }
 #spot-12{
+	position: absolute;
+	transform: translate(100%, 0%);
+}
+#spot-13{
+	position: absolute;
+	transform: translate(200%, 0%);
+}
+#spot-21{
+	position: absolute;
+	transform: translate(0%, 100%);
+}
+#spot-22{
+	position: absolute;
 	transform: translate(100%, 100%);
 }
-
-#spot-21{
-	transform: translate(-100%, -100%);
+#spot-23{
+	position: absolute;
+	transform: translate(200%, 100%);
 }
-
-#spot-22{
-	
-}*/
-
+#spot-31{
+	position: absolute;
+	transform: translate(0%, 200%);
+}
+#spot-32{
+	position: absolute;
+	transform: translate(100%, 200%);
+}
+#spot-33{
+	position: absolute;
+	transform: translate(200%, 200%);
+}
 
 
 
@@ -69,5 +160,5 @@ body{
 
 .bola{
 	width: 150px;
-	height: 150px;
+	height: 150px; 
 }

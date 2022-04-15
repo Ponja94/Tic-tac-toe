@@ -11,9 +11,18 @@
 </head>
 
 <body>
-	<div id="fundo-branco">
+	<div id="fundo">
 		<div id="espaco-de-jogar">
-			<img id="img-linhas" src="img/jogo-da-velha.png">
+			<div id="time-escolha">
+				<p id="tamanho-letra">Pick a Team:</p>
+				
+				<button acao-click1 class="btn" id="btn-b">X - Blue</button><br>
+				<button acao-click2 class="btn" id="btn-r">O - Red</button><br>
+				<button acao-click3 class="btn" id="btn-reset">Reset</button>
+			</div>
+
+			<img id="img-linhas" src="img/jogo-da-velha2.png">
+
 			<div id="spot-jogo">
 				<div id="spot-11" class="spot-peca-jogada">
 					<img class="bola" src="img/bola.png">	
@@ -21,28 +30,27 @@
 				<div id="spot-12" class="spot-peca-jogada">
 					<img class="xis" src="img/xis.png">	
 				</div>
+				<div id="spot-13" class="spot-peca-jogada">
+					<img class="xis" src="img/xis.png">	
+				</div>
 				<div id="spot-21" class="spot-peca-jogada">
 					<img class="xis" src="img/xis.png">	
 				</div>
-				<!--<div id="spot-11" class="spot-peca-jogada">
+				<div id="spot-22" class="spot-peca-jogada">
 					<img class="xis" src="img/xis.png">	
 				</div>
-
-				
-				<div id="spot-11">
+				<div id="spot-23" class="spot-peca-jogada">
 					<img class="xis" src="img/xis.png">	
 				</div>
-				
-				<div id="spot-12">
-					<img class="bola" src="img/bola.png">
+				<div id="spot-31" class="spot-peca-jogada">
+					<img class="xis" src="img/xis.png">	
 				</div>
-				
-				<div id="spot-21">
-					<img class="bola" src="img/bola.png">
+				<div id="spot-32" class="spot-peca-jogada">
+					<img class="xis" src="img/xis.png">	
 				</div>
-				<div id="spot-22">
-					<img class="xis" src="img/xis.png">
-				</div> -->				
+				<div id="spot-33" class="spot-peca-jogada">
+					<img class="xis" src="img/xis.png">	
+				</div>
 			</div>
 		</div>
 	</div>
@@ -52,6 +60,9 @@
 
 
 
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<!-- JS-->
 	<script type="text/javascript" src="js/script.js"></script>
+
 </html>
