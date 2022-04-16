@@ -25,6 +25,7 @@ body{
 	border: 1px solid gray;
 	margin-left: -207px;
 	justify-content: center;
+	position: relative;
 }
 #tamanho-letra{
 	margin-left: 10px;
@@ -95,27 +96,91 @@ body{
 	height: 600px;
 }
 
-.img-ganhador-obliq{
-	display: none;
+.img-ganhador-obl{
 	margin-top: -160px;
 	width: 500px;
 	height: 500px;
+	position: absolute;
+	z-index: 10;
 }
 
 .img-ganhador-vert{
-	display: none;
 	margin-top: -160px;
 	width: 165px;
 	height: 510px;
+	position: absolute;
+	z-index: 10;
 }
 
 .img-ganhador-hor{
-	display: none;
-	margin-top: -160px;
+	margin-top: 0px;
 	width: 510px;
 	height: 165px;
+	position: absolute;
+	z-index: 10;
 }
 
+/* risco vencedor vermelho */
+#bHor1{
+	margin-top: 180px;
+}
+
+#bHor2{
+	margin-top: 360px;
+}
+
+#bVert0{
+	margin-top: 15px;
+}
+
+#bVert1{
+	margin-top: 15px;
+	margin-left: 180px;
+}
+
+#bVert2{
+	margin-top: 15px;
+	margin-left: 360px;
+}
+
+#bOblEsq{
+	margin-top: 15px;
+}
+
+#bOblDir{
+	margin-top: 15px;
+}
+
+/* risco vencedor vermelho */
+#rHor1{
+	margin-top: 180px;
+}
+
+#rHor2{
+	margin-top: 360px;
+}
+
+#rVert0{
+	margin-top: 15px;
+}
+
+#rVert1{
+	margin-top: 15px;
+	margin-left: 180px;
+}
+
+#rVert2{
+	margin-top: 15px;
+	margin-left: 360px;
+}
+
+#rOblEsq{
+	margin-top: 15px;
+}
+
+#rOblDir{
+	margin-top: 15px;
+}
 /* locais de jogo */
 	/*display: inline-block; inline é colunas e inline-flex é as linhas */
 	/* 27cm de margin */
@@ -124,9 +189,12 @@ body{
 	height: 534px;
 	border: 3px solid gray;
 	position: absolute;
+	z-index: 0;
 }
 
 .spot-peca-jogada{
+	position: absolute;
+	z-index: 1;
 	width: 150px;
 	height: 150px;
 	padding: 13px;
@@ -185,11 +253,15 @@ body{
 /* Peças */
 
 .xis{
+	z-index: 0;
+	position: absolute;
 	width: 150px;
 	height: 150px;
 }
 
 .bola{
+	z-index: 0;
+	position: absolute;
 	width: 150px;
 	height: 150px; 
 }

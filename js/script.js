@@ -49,10 +49,10 @@ function quemGanhou(){
 
 	matrixWin = [l0,l1,l2,r0,r1,r2,d0,d1] /*8x3*/
 
-	/*  */
+	/*  
 	console.log(matrixGame)
 	console.log(matrixWin)
-
+	*/
 	
 	counterGamePlayed += 1
 	if(counterGamePlayed >= 1 && counterGamePlayed <= 9){/* alterar para 5 */ 
@@ -70,13 +70,51 @@ function quemGanhou(){
 				console.log('quem ganhou foi o O com id: '+i)
 				$('.btn-jogada').toggle()
 
+				if(i == 0){
+					$('#spot-game').append('<img src="img/winRedHor.png" class="img-ganhador-hor" id="rHor0">')
+				}else if(i == 1){
+					$('#spot-game').append('<img src="img/winRedHor.png" class="img-ganhador-hor" id="rHor1">')
+				}else if(i == 2){
+					$('#spot-game').append('<img src="img/winRedHor.png" class="img-ganhador-hor" id="rHor2">')
+				}else if(i == 3){
+					$('#spot-game').append('<img src="img/winRedVert.png" class="img-ganhador-vert" id="rVert0">')
+				}else if(i == 4){
+					$('#spot-game').prepend('<img src="img/winRedVert.png" class="img-ganhador-vert" id="rVert1">')
+				}else if(i == 5){
+					$('#spot-game').prepend('<img src="img/winRedVert.png" class="img-ganhador-vert" id="rVert2">')
+				}else if(i == 6){
+					$('#spot-game').append('<img src="img/winRedOblEsq.png" class="img-ganhador-obl" id="rOblEsq">')
+				}else if(i == 7){
+					$('#spot-game').append('<img src="img/winRedOblDir.png" class="img-ganhador-obl" id="rOblDir">')
+				}else{
+					console.log('tivemos um erro na hora de mostrar o resultado')
+				}
+
+
 
 			}else if(quantidadeElementosX ==3){
 
-				console.log('quem ganhou foi o X com id: '+i)
 				$('.btn-jogada').toggle()
 
-
+				if(i == 0){
+					$('#spot-game').append('<img src="img/winBlueHor.png" class="img-ganhador-hor" id="bHor0">')
+				}else if(i == 1){
+					$('#spot-game').append('<img src="img/winBlueHor.png" class="img-ganhador-hor" id="bHor1">')
+				}else if(i == 2){
+					$('#spot-game').append('<img src="img/winBlueHor.png" class="img-ganhador-hor" id="bHor2">')
+				}else if(i == 3){
+					$('#spot-game').append('<img src="img/winBlueVert.png" class="img-ganhador-vert" id="bVert0">')
+				}else if(i == 4){
+					$('#spot-game').prepend('<img src="img/winBlueVert.png" class="img-ganhador-vert" id="bVert1">')
+				}else if(i == 5){
+					$('#spot-game').prepend('<img src="img/winBlueVert.png" class="img-ganhador-vert" id="bVert2">')
+				}else if(i == 6){
+					$('#spot-game').append('<img src="img/winBlueOblEsq.png" class="img-ganhador-obl" id="bOblEsq">')
+				}else if(i == 7){
+					$('#spot-game').append('<img src="img/winBlueOblDir.png" class="img-ganhador-obl" id="bOblDir">')
+				}else{
+					console.log('tivemos um erro na hora de mostrar o resultado')
+				}
 	 			
 
 
@@ -100,7 +138,7 @@ function quemGanhou(){
 }
 
 
-/* btn team blue */
+/* btn team Red */
 $('[action-click1],[action-click2]').on('click', function(e){
 	$('[action-click1],[action-click2').toggle()	
 	$('[action-click3').show()
